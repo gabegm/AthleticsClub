@@ -1,0 +1,59 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*****************************************************************************
+*
+*  PROJECT:     Creating Interactive Web pages with a Controlled Layout
+*  LICENSE:     See LICENSE in the top level directory
+*  FILE:        public_html/styles/home.css
+*  PURPOSE:     Home page style
+*  DEVELOPERS:  Gabriel Gauci Maistre <scarface@potholestudios.com>
+*
+*****************************************************************************/
+	
+/* This rule affects all h2 tags. */
+h2
+	{
+		width:100%;
+		float:left;
+		padding:10px 0px 10px 0px;
+	}
+
+/* This rule affects all text being shifted to the left of the web page. */
+.mainTextLeft
+	{
+		float:left;
+		width:430px;
+		padding:10px 10px 10px 0px;
+	}
+
+/* This rule affects all text being shifted to the right of the web page. */
+.mainTextRight
+	{
+		float:right;
+		width:450px;
+		padding:10px 0px 10px 10px;
+	}
+
+/* This rule affects all images being shifted to the left of the web page. */
+.imageLeft
+	{
+		float:left;
+		width:auto;
+		margin-top:-40px;
+		padding:15px 15px 15px 0px;
+	}
+
+/* This rule affects all images being shifted to the right of the web page. */
+.imageRight
+	{
+		float:right;
+		width:auto;
+		padding:15px 0px 15px 15px;
+	}
+	
+#Calculate
+	{
+		width:430px;
+		height:auto;
+	}

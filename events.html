@@ -1,0 +1,115 @@
+<!--************************************************************************
+*
+*  PROJECT:     Creating Interactive Web pages with a Controlled Layout
+*  LICENSE:     See LICENSE in the top level directory
+*  FILE:        public_html/events.html
+*  PURPOSE:     Page for users to see the events of the organisation
+*  DEVELOPERS:  Gabriel Gauci Maistre <scarface@potholestudios.com>
+*
+*************************************************************************-->
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>MCAST Athletics</title>
+<link rel="stylesheet" href="styles/masterStyle.css" type="text/css"/>
+<link rel="stylesheet" href="styles/flexslider.css" type="text/css"/>
+<link rel="stylesheet" href="styles/events.css" type="text/css"/>
+<link rel="stylesheet" href="styles/lightbox.css" type="text/css"/>
+<link href="SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css" />
+<link href="SpryAssets/SpryMenuBarHorizontal.css" rel="stylesheet" type="text/css" />
+<script src="scripts/jquery-1.7.2.min.js" type="text/javascript"></script>
+<script src="scripts/jquery.flexslider.js" type="text/javascript"></script>
+<script src="scripts/jquery.flexslider-min.js" type="text/javascript"></script>
+<script src="scripts/lightbox.js" type="text/javascript"></script>
+<script src="scripts/masterScript.js" type="text/javascript"></script>
+<script src="SpryAssets/SpryMenuBar.js" type="text/javascript"></script>
+<script type="text/javascript">  
+	$(window).load(function() {
+	$('.flexslider').flexslider({
+    animation: "slide"
+  });
+});
+</script>
+</head>
+<body onload="Time()">
+	<div id="wrapper">
+		<div id="navBar">
+			<div class="homeButton">
+				<a href="index.html"><img src="images/mcastathletics.gif" height="85 px" alt="MCAST Athletics logo"/></a>
+			</div>
+			<ul id="MenuBar1" class="MenuBarHorizontal">
+			  <li><a href="index.html">Home</a></li>
+			  <li><a href="athletics.html" class="MenuBarItemSubmenu">Athletics</a>
+			    <ul>
+                  <li><a href="athletics.html">Discus</a></li>
+                  <li><a href="athletics.html">Javeline</a></li>
+                  <li><a href="athletics.html">Shot Put</a></li>
+                  <li><a href="athletics.html">Hammer Throw</a></li>
+				  <li><a href="athletics.html">Road Running</a></li>
+			    </ul>
+			  </li>
+			  <li><a class="MenuBarItemSubmenu" href="events.html">Events</a>
+			    <ul>
+			      <li><a href="events.html">Marathon</a></li>
+			      <li><a href="events.html">Swimming</a></li>
+			      <li><a href="events.html">Hike</a></li>
+				  <li><a href="events.html">Sports Day</a></li>
+		        </ul>
+		      </li>
+              <li><a href="subscribe.html">Subscribe</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+		  </ul>
+		</div>
+		<div id="Time"></div>
+		<div id="imageSlider">
+			<div class="flexslider">  
+				<ul class="slides">    
+					<li><img src="images/rugby.jpg" alt="Rugby"/></li>    
+					<li><img src="images/ground.jpg" alt="Ground"/></li>    
+					<li><img src="images/pool.jpg" alt="Pool"/></li>
+					<li><img src="images/canoes.jpg" alt="Canoes"/></li>
+					<li><img src="images/indoorpitch.jpg" alt="Indoor Pitch"/></li>
+					<li><img src="images/voleyball.jpg" alt="Voleyball"/></li>
+					<li><img src="images/smilingkid.jpg" alt="Smiling Kid"/></li>
+				</ul>
+			</div>		
+		</div>
+		<div id="mainContent">
+			<h2>Marathon</h2>
+			<p class="mainTextLeft">MCAST Athletics are organising a marathon on the 10th of Augast. A marathon is a long-distance running event with an official distance of 42.195 kilometres, that is usually run as a road race. The 'marathon' was instituted in commemoration of the fabled run of the Greek soldier Pheidippides, a messenger from the Battle of Marathon to Athens. The marathon was one of the original modern Olympic events in 1896, though the distance did not become standardized until 1921. More than 500 marathons are held throughout the world each year, with the vast majority of competitors being recreational athletes. Smaller marathons, such as the Stanley Marathon, can have just dozens of participants, while larger marathons can have tens of thousands of participants. If you'd like to take part in our marathon, visit us at our atheletics department in MCAST. </p>
+			<div class="imageRight"><a href="images/marathon.jpg" rel="lightbox" title="Marathon"><img src="images/marathon.jpg"  alt="Marathon" height="200px" width="300px" /></a></div>
+			<h2>Swimming</h2>
+			<p class="mainTextLeft">MCAST Athletics are organising a swimming competition to take place at the national pool in Gzira on the 14th of July. Competitive swimming became popular in the nineteenth century. The goal of competitive swimming is to constantly improve upon one's time(s), or to beat the competitors in any given event. Swimming is an event at the Summer Olympic Games, where male and female athletes compete in 16 of the recognized events each. Olympic events are held in a 50-meter pool, called a long course pool. If you'd like to take part in our marathon, visit us at our atheletics department in MCAST.</p>
+			<div class="imageRight"><a href="images/swimming.jpg" rel="lightbox" title="Swimming"><img src="images/swimming.jpg"  alt="Swimming" height="200px" width="300px" /></a></div>
+			<h2>Hike</h2>
+			<p class="mainTextLeft">MCAST Athletics are organising a hike which will take place at Verdala on the 20th of September. Hiking is an outdoor activity which consists of walking in natural environments, often in mountainous or other scenic terrain. People often hike on hiking trails. It is such a popular activity that there are numerous hiking organizations worldwide. Studies have confirmed the health benefits of different types of hiking, including losing excess weight, decreasing hypertension, and improving mental health. The word hiking is understood in all English-speaking countries, but there are differences in usage. If you'd like to take part in our marathon, visit us at our atheletics department in MCAST.</p>
+			<div class="imageRight"><a href="images/hike.jpg" rel="lightbox" title="Hike"><img src="images/hike.jpg"  alt="Hike" height="200px" width="300px" /></a></div>
+			<h2>Sports Day</h2>
+			<p class="mainTextLeft">MCAST Athletics are organising a sports day to be held on the 30th of Augast. Sports days, sometimes referred to as field days, are events staged by many schools and offices in which people take part in competitive sporting activities, often with the aim of winning trophies or prizes. Though they are usually held at the beginning of summer, they are also staged in the autumn or spring seasons, especially in countries where the summer is very harsh. Schools stage many sports days in which children participate in the sporting events. They are usually held either in Winter season or in Summer season. Also, it is usually held in elementary schools, or grades Kindergarten-8th Grade. it also can be held in middle schools. After sports day is over schools give the children the day off to recover.In schools which use a house system a feature of the school is the competition between the houses, this is especially brought out during sporting events such as an Inter-house sports day. Games that are played on school sports days can be wide and varied. There are straight forward sprints and longer races for all age groups as well as egg and spoon races. Three legged races are run as well as sack races and parent and child races. Additional games are traditionally run in Ireland and the UK, such as wheel barrow races and games such as horse shoe throwing. If you'd like to take part in our marathon, visit us at our atheletics department in MCAST.</p>
+			<div class="imageRight"><a href="images/sportsday.jpg" rel="lightbox" title="Sports Day"><img src="images/sportsday.jpg"  alt="Sports Day" height="200px" width="300px" /></a></div>
+		</div>
+		<div id="footer">
+			<div class="footerLeft">
+				<p>Visit us:</p>
+				<a href="http://www.twitter.com">Twitter</a> |
+				<a href="http://www.facebook.com">Facebook</a> |
+				<a href="http://www.plus.google.com">Google+</a>
+			</div>
+			<p class="footerLeft">
+			<a href="http://validator.w3.org/check?uri=referer"><img src="http://www.w3.org/Icons/valid-xhtml11" alt="Valid XHTML 1.1"  height="31" width="88" /></a>
+			<a href="http://jigsaw.w3.org/css-validator/check/referer"><img style="border:0;width:88px;height:31px" src="http://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!" /></a>
+			</p>
+			<div class="footerLeft">
+				<p style="font-size:8pt">All Content &copy; 2013 MCAST Unless Otherwise Stated</p>
+				<p style="font-size:8pt">The logos and trademarks used on this site are the property of their respective owners</p>
+				<p style="font-size:8pt">Interactive software released under GNU GPL, Code Credits, Privacy Policy</p>
+			</div>
+		</div>
+    </div>
+<script type="text/javascript">
+var MenuBar1 = new Spry.Widget.MenuBar("MenuBar1", {imgDown:"SpryAssets/SpryMenuBarDownHover.gif", imgRight:"SpryAssets/SpryMenuBarRightHover.gif"});
+</script>
+</body>
+</html>

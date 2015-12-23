@@ -1,0 +1,129 @@
+<!--************************************************************************
+*
+*  PROJECT:     Creating Interactive Web pages with a Controlled Layout
+*  LICENSE:     See LICENSE in the top level directory
+*  FILE:        public_html/index.html
+*  PURPOSE:     Home page to welcome the users
+*  DEVELOPERS:  Gabriel Gauci Maistre <scarface@potholestudios.com>
+*
+*************************************************************************-->
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>MCAST Athletics</title>
+<link rel="stylesheet" href="styles/masterStyle.css" type="text/css"/>
+<link rel="stylesheet" href="styles/flexslider.css" type="text/css"/>
+<link rel="stylesheet" href="styles/home.css" type="text/css"/>
+<link rel="stylesheet" href="styles/lightbox.css" type="text/css"/>
+<link rel="stylesheet" href="SpryAssets/SpryMenuBarHorizontal.css" type="text/css" />
+<script src="scripts/jquery-1.7.2.min.js" type="text/javascript"></script>
+<script src="scripts/jquery.flexslider.js" type="text/javascript"></script>
+<script src="scripts/jquery.flexslider-min.js" type="text/javascript"></script>
+<script src="scripts/lightbox.js" type="text/javascript"></script>
+<script src="scripts/masterScript.js" type="text/javascript"></script>
+<script src="SpryAssets/SpryMenuBar.js" type="text/javascript"></script>
+<!-- Code takeb from Flexslider -->
+<!-- Loads the image slider -->
+<script type="text/javascript">  
+	$(window).load(function() {
+	$('.flexslider').flexslider({
+    animation: "slide"
+  });
+});
+</script>
+</head>
+<body onload="Time()">
+	<div id="wrapper">
+        <div id="navBar">
+			<div class="homeButton">
+				<a href="index.html"><img src="images/mcastathletics.gif" alt="MCAST Athletics logo"/></a>
+			</div>
+			<ul id="MenuBar1" class="MenuBarHorizontal">
+			  <li><a href="index.html">Home</a></li>
+			  <li><a href="athletics.html" class="MenuBarItemSubmenu">Athletics</a>
+			    <ul>
+                  <li><a href="athletics.html">Discus</a></li>
+                  <li><a href="athletics.html">Javeline</a></li>
+                  <li><a href="athletics.html">Shot Put</a></li>
+                  <li><a href="athletics.html">Hammer Throw</a></li>
+				  <li><a href="athletics.html">Road Running</a></li>
+			    </ul>
+			  </li>
+			  <li><a class="MenuBarItemSubmenu" href="events.html">Events</a>
+			    <ul>
+			      <li><a href="events.html">Marathon</a></li>
+			      <li><a href="events.html">Swimming</a></li>
+			      <li><a href="events.html">Hike</a></li>
+				  <li><a href="events.html">Sports Day</a></li>
+		        </ul>
+		      </li>
+              <li><a href="subscribe.html">Subscribe</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+		  </ul>
+		</div>
+        <div id="Time"></div>
+		<div id="imageSlider">
+			<div class="flexslider">  
+				<ul class="slides">    
+					<li><img src="images/rugby.jpg" alt="Rugby"/></li>    
+					<li><img src="images/ground.jpg" alt="Ground"/></li>    
+					<li><img src="images/pool.jpg" alt="Pool"/></li>
+					<li><img src="images/canoes.jpg" alt="Canoes"/></li>
+					<li><img src="images/indoorpitch.jpg" alt="Indoor Pitch"/></li>
+					<li><img src="images/voleyball.jpg" alt="Voleyball"/></li>
+					<li><img src="images/smilingkid.jpg" alt="Smiling Kid"/></li>
+				</ul>
+			</div>		
+		</div>
+		<div id="mainContent">
+			<h2>MCAST Athletics</h2>
+			<p class="mainTextLeft">MCAST Athletics is an association formed part of MCAST. Malta College of Arts, Science and Technology (MCAST), is located in Paola, Malta. Its mission is "To provide universally accessible vocational and professional education and training with an international dimension, responsive to the needs of the individual and the economy". The college provides students with numerious courses in various fields such as Agribusiness, Applied Science, Art &amp; Design, Building &amp; Construction Engineering, Business &amp; Commerce, Community Services, Electrical &amp; Electronics Engineering, Information &amp; Communication Technology, Maritime, and Mechanical Engineering. MCAST Athletics was founded in 2005 in order to better the student's fitness and provide the opportunity to compete in athletics on both national and international levels.</p>
+			<div class="imageRight"><a href="images/athleticsclub.jpg" rel="lightbox" title="Athletics Club"><img src="images/athleticsclub.jpg" alt="Athletics Club" height="200px" width="290px" /></a></div>
+			<h2 style="float:right;width:450px">What we do</h2>
+			<p class="mainTextRight">MCAST Athletics hosts various events all throughout the year, many of which include Sports Day, Hiking, Swimming and so on, which can be found on our Events page. We are very successful in providing students with the means to better their studies while keeping fit at the same time, and we teach our students that doing both is not hard, can be a lot of fun, and is also very rewarding. MCAST offers numerous facilities in order for students to be able to train and enjoy themselves at their favourite sport, many of which include a outdoor and indoor pitch, an indoor swimming pool and many more. By participating in athletics, students live a healthier life. Taking part in sports is good all round for young teens: physically, socially, and mentally. Research shows that middle-school teenagers who are physically active and play on sports teams are more satisfied with their life and feel healthier.</p>
+			<div class="imageLeft"><a href="images/asiangamesathletics.jpg" rel="lightbox" title="Asian Games Athletics"><img src="images/asiangamesathletics.jpg" alt="Asian Games Athletics" height="200px" width="290px" /></a>
+			</div>
+			<h2 style="float:left;width:450px">Calculate the total amount of calories burned while running</h2>
+			<p class="mainTextLeft">Burning the right amount of calories is very important when we want to lose or maintain our weight. Each exercise burns a different amount of calories, and it differs between people. If you would like to know how much calories you burn while walking, input in the calculator below your weight in kilograms and the distance you walk in kilometres and the calculator will do the rest of the work!</p>
+			<div class="imageRight"><a href="images/walking.jpg" rel="lightbox" title="Walking"><img src="images/walking.jpg" alt="Walking" height="200px" width="290px" /></a>
+			</div>
+			<div id="Calculate">
+				<form name="Calculate" method="post" action="" >
+					<table>
+						<tr>
+							<td><input type="text" id="weight" value="Insert Weight" /></td>
+							<td>x</td>
+							<td><input type="text" id="distance" value="Insert Distance" /></td>
+							<td><input type="button" value="Calculate" onclick="CalculateCalories()" /></td>
+						</tr>
+					</table>
+				</form>
+			</div>
+		</div>
+    	<div id="footer">
+			<div class="footerLeft">
+				<p>Visit us:</p>
+				<a href="http://www.twitter.com">Twitter</a> |
+				<a href="http://www.facebook.com">Facebook</a> |
+				<a href="http://www.plus.google.com">Google+</a>
+			</div>
+				<p class="footerLeft">
+					<a href="http://validator.w3.org/check?uri=referer"><img src="http://www.w3.org/Icons/valid-xhtml11" alt="Valid XHTML 1.1"  height="31" width="88" /></a>
+					<a href="http://jigsaw.w3.org/css-validator/check/referer"><img style="border:0;width:88px;height:31px" src="http://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!" /></a>
+				</p>
+			<div class="footerLeft">
+					<p style="font-size:8pt">All Content &copy; 2013 MCAST Unless Otherwise Stated</p>
+					<p style="font-size:8pt">The logos and trademarks used on this site are the property of their respective owners</p>
+					<p style="font-size:8pt">Interactive software released under GNU GPL, Code Credits, Privacy Policy</p>
+			</div>
+		</div>
+    </div>
+<!-- Code taken from Dreamweaver CS6 -->
+<!-- Loads the Menubar -->
+<script type="text/javascript">
+var MenuBar1 = new Spry.Widget.MenuBar("MenuBar1", {imgDown:"SpryAssets/SpryMenuBarDownHover.gif", imgRight:"SpryAssets/SpryMenuBarRightHover.gif"});
+</script>
+</body>
+</html>

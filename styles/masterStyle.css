@@ -1,0 +1,137 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*****************************************************************************
+*
+*  PROJECT:     Creating Interactive Web pages with a Controlled Layout
+*  LICENSE:     See LICENSE in the top level directory
+*  FILE:        public_html/styles/masterStyle.css
+*  PURPOSE:     Master styles to be used by all web pages
+*  DEVELOPERS:  Gabriel Gauci Maistre <scarface@potholestudios.com>
+*
+*****************************************************************************/
+
+/* All rules in this CSS Document affect all pages. */
+
+/* This rule affects all the other rules in this document. */
+*{
+	padding:0px;
+	margin:0px;
+ }
+
+/* This is the border of the web page */ 
+#wrapper
+	{
+		position:relative;
+		margin:15px auto;
+		width:1024px;
+		height:auto;
+		background-color:#f3bd82;
+	}
+
+/*This is the navigational bar located at the top of the web page. */ 	
+#navBar
+	{
+		width:100%;
+		height:80px;
+		background-color: #ff7f00;
+		overflow:visible;
+		border-top:6px #970000 solid;
+	}
+
+/* This creates our home button logo at the top left of the navigational bar. */	
+.homeButton
+	{
+		float:left;
+		width:80px;
+		height:100%;
+	}
+
+/* This affects the image of the home button logo. */	
+.homeButton img
+	{
+		
+		width:80px;
+		height:100%;
+	}
+/* This is the time located on the right side of the navigational bar. */ 	
+#Time
+	{
+		width:98.1%;
+		height:18px;
+		background-color:#970000;
+		text-align:right;
+		padding-right:20px;
+	}
+
+/* This is the image slider located under the navigational bar. */	
+#imageSlider
+	{
+		width:100%;
+		height:200px;
+		float:left;
+		overflow:hidden;
+		border-bottom:6px #970000 solid;
+		background-color:white;
+	}
+
+/* This is where all content, images and texts, are going to be displayed. */	
+#mainContent
+	{
+		width:76%;
+		height:auto;
+		background-color:#FFF;
+		text-align:justify;
+		margin-left:12%;
+		margin-right:12%;
+		background-color:#f3bd82;
+	}
+
+/* This give a padding of 20px to all the p tags in the mainContent rule. */	
+#mainContent p
+	{
+		padding-bottom:20px;
+	}
+	
+/* This sets all the text in the body to the same font and colour */	
+body
+	{
+		font-family:Arial, Helvetica, sans-serif;
+		background-color: #fff;
+	}
+
+/* This is our footer located at the bottom of the web page. */
+#footer
+	{
+		width:100%;
+		height:70px;
+		background-color: #ff7f00;
+		overflow:hidden;
+		border-top:6px #970000 solid;
+	}
+
+/* This creates an area to the left side of the footer for content to flow from the left */
+.footerLeft
+	{
+		float:left;
+		width:340px;
+	}
+
+/* This rule affects all links in the footer. */
+#footer a
+	{
+		color:black;
+		text-decoration:none;
+	}
+
+/* This rule affects all links in the footer which are in hover mode. */
+#footer a:hover
+	{
+		text-decoration:underline;
+	}
+
+/* This rule affects all images. */
+a img
+	{
+		border:0px;
+	}

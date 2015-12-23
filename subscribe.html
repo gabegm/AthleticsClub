@@ -1,0 +1,182 @@
+<!--************************************************************************
+*
+*  PROJECT:     Creating Interactive Web pages with a Controlled Layout
+*  LICENSE:     See LICENSE in the top level directory
+*  FILE:        public_html/subscribe.html
+*  PURPOSE:     Page for users to subscribe to the newsletter
+*  DEVELOPERS:  Gabriel Gauci Maistre <scarface@potholestudios.com>
+*
+*************************************************************************-->
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>MCAST Athletics</title>
+<link rel="stylesheet" href="styles/masterStyle.css" type="text/css"/>
+<link rel="stylesheet" href="styles/flexslider.css" type="text/css"/>
+<link rel="stylesheet" href="styles/subscribe.css" type="text/css"/>
+<link rel="stylesheet" href="styles/lightbox.css" type="text/css"/>
+<link rel="stylesheet" href="SpryAssets/SpryValidationTextField.css" type="text/css" />
+<link rel="stylesheet" href="SpryAssets/SpryMenuBarHorizontal.css" type="text/css" />
+<script src="scripts/jquery-1.7.2.min.js" type="text/javascript"></script>
+<script src="scripts/jquery.flexslider.js" type="text/javascript"></script>
+<script src="scripts/jquery.flexslider-min.js" type="text/javascript"></script>
+<script src="scripts/lightbox.js" type="text/javascript"></script>
+<script src="scripts/masterScript.js" type="text/javascript"></script>
+<script src="SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
+<script src="SpryAssets/SpryMenuBar.js" type="text/javascript"></script>
+<script type="text/javascript">  
+	$(window).load(function() {
+	$('.flexslider').flexslider({
+    animation: "slide"
+  });
+});
+</script>
+</head>
+<body onload="Time()">
+	<div id="wrapper">
+		<div id="navBar">
+			<div class="homeButton">
+				<a href="index.html"><img src="images/mcastathletics.gif" height="85 px" alt="MCAST Athletics logo"/></a>
+			</div>
+			<ul id="MenuBar1" class="MenuBarHorizontal">
+			  <li><a href="index.html">Home</a></li>
+			  <li><a href="athletics.html" class="MenuBarItemSubmenu">Athletics</a>
+			    <ul>
+                  <li><a href="athletics.html">Discus</a></li>
+                  <li><a href="athletics.html">Javeline</a></li>
+                  <li><a href="athletics.html">Shot Put</a></li>
+                  <li><a href="athletics.html">Hammer Throw</a></li>
+				  <li><a href="athletics.html">Road Running</a></li>
+			    </ul>
+			  </li>
+			  <li><a class="MenuBarItemSubmenu" href="events.html">Events</a>
+			    <ul>
+			      <li><a href="events.html">Marathon</a></li>
+			      <li><a href="events.html">Swimming</a></li>
+			      <li><a href="events.html">Hike</a></li>
+				  <li><a href="events.html">Sports Day</a></li>
+		        </ul>
+		      </li>
+              <li><a href="subscribe.html">Subscribe</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+		  </ul>
+		</div>
+		<div id="Time"></div>
+		<div id="imageSlider">
+			<div class="flexslider">  
+				<ul class="slides">    
+					<li><img src="images/rugby.jpg" alt="Rugby"/></li>    
+					<li><img src="images/ground.jpg" alt="Ground"/></li>    
+					<li><img src="images/pool.jpg" alt="Pool"/></li>
+					<li><img src="images/canoes.jpg" alt="Canoes"/></li>
+					<li><img src="images/indoorpitch.jpg" alt="Indoor Pitch"/></li>
+					<li><img src="images/voleyball.jpg" alt="Voleyball"/></li>
+					<li><img src="images/smilingkid.jpg" alt="Smiling Kid"/></li>
+				</ul>
+			</div>		
+		</div>
+		<div id="mainContent">
+			<h2>Subscribe</h2>
+			<p>If you would like to subscribe to our monthly newsletter, please fill in the form below. The newsletter features articles regarding our students who are making a name for themselves in national and even international events. The newsletter also includes reviews of events which were held in the last month, and details regarding oncoming events. Each edition contains interviews conducted with famous athletes from all over the island, in which they tell us their secret in become one of the best in Malta, while also talking about their personal life.</p>
+			<form name="subscribe" method="post" action="mailto:mcastathletics@mcast.edu.mt">
+				<table>
+				  <tr>
+					<td>Name</td>
+					<td><span id="sprytextfield1">
+			      <label for="name"></label>
+					  <input type="text" name="name" id="name" />
+				    <span class="textfieldRequiredMsg">A value is required.</span></span></td>
+				  </tr>
+                    <tr>
+					<td>Surname</td>
+					<td><span id="sprytextfield2">
+					  <label for="Surname"></label>
+					  <input type="text" name="Surname" id="Surname" />
+					  <span class="textfieldRequiredMsg">A value is required.</span></span></td>
+				  </tr>
+                    <tr>
+					<td>Age</td>
+					<td><span id="sprytextfield3">
+                    <label for="Age"></label>
+                    <input type="text" name="Age" id="Age" />
+                    <span class="textfieldRequiredMsg">A value is required.</span><span class="textfieldInvalidFormatMsg">Invalid format.</span><span class="textfieldMinValueMsg">The entered value is less than the minimum required.</span><span class="textfieldMaxValueMsg">The entered value is greater than the maximum allowed.</span></span></td>
+				  </tr>
+				  <tr>
+					<td>Mobile</td>
+					<td><span id="sprytextfield7">
+                    <label for="Mobile"></label>
+                    <span id="sprytextfield8">
+                    <input type="text" name="Mobile" id="Mobile" />
+                    <span class="textfieldRequiredMsg">A value is required.</span><span class="textfieldMinCharsMsg">Minimum number of characters not met.</span><span class="textfieldMaxCharsMsg">Exceeded maximum number of characters.</span></span><span class="textfieldRequiredMsg">A value is required.</span><span class="textfieldInvalidFormatMsg">Invalid format.</span><span class="textfieldMinValueMsg">The entered value is less than the minimum required.</span><span class="textfieldMaxValueMsg">The entered value is greater than the maximum allowed.</span></span></td>
+				  </tr>
+                  <tr>
+					<td>DOB</td>
+					<td><span id="sprytextfield4">
+                    <label for="DOB"></label>
+                    <input type="text" name="DOB" id="DOB" />
+                    <span class="textfieldRequiredMsg">A value is required.</span><span class="textfieldInvalidFormatMsg">Invalid format.</span></span></td>
+				  </tr>
+                  <tr>
+                    <td>Address</td>
+					<td><span id="sprytextfield9">
+					<label for="address"></label>
+					<input type="text" name="address" id="address" />
+					<span class="textfieldRequiredMsg">A value is required.</span><span class="textfieldInvalidFormatMsg">Invalid format.</span></span></td>
+                  </tr>
+                    <tr>
+                    <td>Email</td>
+					<td><span id="sprytextfield5">
+                    <label for="Email"></label>
+                    <input type="text" name="Email" id="Email" />
+                    <span class="textfieldRequiredMsg">A value is required.</span><span class="textfieldInvalidFormatMsg">Invalid format.</span></span></td>
+				  </tr>
+                    <tr>
+					<td>Re-type Email</td>
+					<td><span id="sprytextfield6">
+                    <label for="Email1"></label>
+                    <input type="text" name="Email1" id="Email1" />
+                    <span class="textfieldRequiredMsg">A value is required.</span><span class="textfieldInvalidFormatMsg">Invalid format.</span></span></td>
+				  </tr>
+				  <tr>
+					<td><input type="submit" value="Submit" /></td>
+					<td><input type="reset" value="Reset"  /></td>
+				  </tr>
+				</table>
+			</form>
+			* All fields are required.
+		</div>
+		<div id="footer">
+			<div class="footerLeft">
+				<p>Visit us:</p>
+				<a href="http://www.twitter.com">Twitter</a> |
+				<a href="http://www.facebook.com">Facebook</a> |
+				<a href="http://www.plus.google.com">Google+</a>
+			</div>
+			<p class="footerLeft">
+			<a href="http://validator.w3.org/check?uri=referer"><img src="http://www.w3.org/Icons/valid-xhtml11" alt="Valid XHTML 1.1"  height="31" width="88" /></a>
+			<a href="http://jigsaw.w3.org/css-validator/check/referer"><img style="border:0;width:88px;height:31px" src="http://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!" /></a>
+			</p>
+			<div class="footerLeft">
+				<p style="font-size:8pt">All Content &copy; 2013 MCAST Unless Otherwise Stated</p>
+				<p style="font-size:8pt">The logos and trademarks used on this site are the property of their respective owners</p>
+				<p style="font-size:8pt">Interactive software released under GNU GPL, Code Credits, Privacy Policy</p>
+			</div>
+		</div>
+    </div>
+<!-- Code taken from Dreamweaver CS6 -->
+<!-- Loads the validational text field -->
+<script type="text/javascript">
+var sprytextfield1 = new Spry.Widget.ValidationTextField("sprytextfield1");
+var sprytextfield2 = new Spry.Widget.ValidationTextField("sprytextfield2");
+var sprytextfield3 = new Spry.Widget.ValidationTextField("sprytextfield3", "integer", {minValue:19, maxValue:99});
+var sprytextfield4 = new Spry.Widget.ValidationTextField("sprytextfield4", "date", {format:"dd/mm/yyyy"});
+var sprytextfield5 = new Spry.Widget.ValidationTextField("sprytextfield5", "email");
+var sprytextfield6 = new Spry.Widget.ValidationTextField("sprytextfield6", "email");
+var MenuBar1 = new Spry.Widget.MenuBar("MenuBar1", {imgDown:"SpryAssets/SpryMenuBarDownHover.gif", imgRight:"SpryAssets/SpryMenuBarRightHover.gif"});
+var sprytextfield8 = new Spry.Widget.ValidationTextField("sprytextfield8", "none", {minChars:8, maxChars:8});
+var sprytextfield9 = new Spry.Widget.ValidationTextField("sprytextfield9");
+</script>
+</body>
+</html>

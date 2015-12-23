@@ -1,0 +1,20 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*****************************************************************************
+*
+*  PROJECT:     Creating Interactive Web pages with a Controlled Layout
+*  LICENSE:     See LICENSE in the top level directory
+*  FILE:        public_html/styles/subscribe.css
+*  PURPOSE:     Subscribe page style
+*  DEVELOPERS:  Gabriel Gauci Maistre <scarface@potholestudios.com>
+*
+*****************************************************************************/
+
+/* This rule affects all h2 tags. */
+h2
+	{
+		width:100%;
+		float:left;
+		padding:10px 0px;
+	}
